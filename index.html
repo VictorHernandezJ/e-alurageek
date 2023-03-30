@@ -1,19 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lampara</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>E-Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/productos.css">
+    <link rel="stylesheet" href="./css/rodapie.css">
 </head>
+
 <body>
-    <div class="lampara">
-        <div class="cable"></div>
-        <div class="socalo"></div>
-        <div class="foco"></div>
-        <button class="interruptor" onclick="encender()"></button>
-    </div>
+    <header>
+        <ul class="contenedor">
+            <li class="contenedor-logo">
+                <img src="./resource/img/logo.svg" alt="alura geek">
+            </li>
+            <li class="contenedor-buscador">
+                <input type="search" name="" id="buscar-text" placeholder="¿Qué deseas buscar?">
+                <input class="btn-buscar" type="image" src="./resource/img/search.svg" alt="">
+            </li>
+            <li class="contenedor-login-header">
+                <button class="btn-login">Login</button>
+            </li>
+            <li class="contenedor-icono">
+                <img src="./resource/img/icono-search.svg" alt="">
+            </li>
+        </ul>
+    </header>
+    <section class="banner">
+        <h2 class="banner-titulo">febrero promocional</h2>
+        <p class="banner-descripcion">Productos selecionados con 33% de descuento</p>
+        <button class="banner-boton">ver consolas</button>
+    </section>
+    <section class="productos">
+        <div class="productos-contenedor">
+            <div class="productos-header">
+                <ul class="header-items">
+                    <li class="header-titulo">star wars</li>
+                    <li class="header-link"><a href="#"><span>Ver todo</span> <img src="./resource/img/icono-flecha.svg"></a></li>
+                </ul>
+            </div>
+            <div class="productos-body">
+                <div class="producto">
+                    <img src="./resource/img/productos/star-wars/sw-1.svg" alt="" class="producto-img">
+                    <span class="producto-nombre">Producto xyz</span>
+                    <span class="producto-precio">$60,00</span>
+                    <a href="#" class="producto-ver">Ver producto</a>
+                </div>
+                <div class="producto">
+                    <img src="./resource/img/productos/star-wars/sw-2.svg" alt="" class="producto-img">
+                    <span class="producto-nombre">Producto xyz</span>
+                    <span class="producto-precio">$60,00</span>
+                    <a href="#" class="producto-ver">Ver producto</a>
+                </div>
+                <div class="producto">
+                    <img src="./resource/img/productos/star-wars/sw-3.svg" alt="" class="producto-img">
+                    <span class="producto-nombre">Producto xyz</span>
+                    <span class="producto-precio">$60,00</span>
+                    <a href="#" class="producto-ver">Ver producto</a>
+                </div>
+                <div class="producto">
+                    <img src="./resource/img/productos/star-wars/sw-4.svg" alt="" class="producto-img">
+                    <span class="producto-nombre">Producto xyz</span>
+                    <span class="producto-precio">$60,00</span>
+                    <a href="#" class="producto-ver">Ver producto</a>
+                </div>
+                <div class="producto">
+                    <img src="./resource/img/productos/star-wars/sw-5.svg" alt="" class="producto-img">
+                    <span class="producto-nombre">Producto xyz</span>
+                    <span class="producto-precio">$60,00</span>
+                    <a href="#" class="producto-ver">Ver producto</a>
+                </div>
+                <div class="producto">
+                    <img src="./resource/img/productos/star-wars/sw-6.svg" alt="" class="producto-img">
+                    <span class="producto-nombre">Producto xyz</span>
+                    <span class="producto-precio">$60,00</span>
+                    <a href="#" class="producto-ver">Ver producto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="rodapie">
+        <div class="rodapie-empresa">
+            <div class="logo-lista">
+                <div class="rodapie-logo">
+                    <img src="./resource/img/logo.svg" alt="logo">
+                </div>
+                <div class="rodapie-lista">
+                    <li class="lista-item">quienes somos</li>
+                    <li class="lista-item">politíca de privacidad</li>
+                    <li class="lista-item">programa de fidelidad</li>
+                    <li class="lista-item">nuestras tiendas</li>
+                    <li class="lista-item">quiero ser franquiciado</li>
+                    <li class="lista-item">anúncie aquí</li>
+                </div>
+            </div>
+            <div class="rodapie-contacto">
+                <form action="#">
+                    <label class="contacto-titulo" for="">hable con nosotros</label>
+                    <input class="contacto-nombre" type="text" placeholder="Nombre">
+                    <textarea class="contacto-mensaje" name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                    <button class="contacto-boton">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="rodapie-desarrollador">
+            <span class="autor">Desarrollado por <b>Victor Javier Hernandez Mendoza</b> 2023</span>
+        </div>
+    </footer>
 </body>
-<script src="js/app.js"></script>
 </html>
